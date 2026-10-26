@@ -1,0 +1,17 @@
+{
+  "name": "cf-sync-probe2",
+  "description": "自動同期の実験用の最小構成（Actions が動くか・自動の push で Workers Builds が反応するか）",
+  "private": true,
+  "cloudflare": {
+    "label": "Sync Probe",
+    "products": ["Workers"],
+    "categories": ["starter"],
+    "publish": true
+  },
+  "scripts": {
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  }
+}
